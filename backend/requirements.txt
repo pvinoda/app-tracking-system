@@ -21,7 +21,7 @@ gast==0.3.3
 google-auth==1.23.0
 google-auth-oauthlib==0.4.2
 google-pasta==0.2.0
-grpcio==1.33.2
+grpcio==1.52.0
 idna==2.10
 ipykernel==5.3.4
 ipython==7.19.0

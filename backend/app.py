@@ -470,7 +470,7 @@ with open("application.yml") as f:
     password = info["password"]
     app.config["MONGODB_SETTINGS"] = {
         "db": "appTracker",
-        "host": f"mongodb+srv://{username}:{password}@applicationtracker.287am.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+        "host": f"mongodb+srv://{username}:{password}@cluster0.en3fo.mongodb.net/todolistDB?retryWrites=true&w=majority",
     }
 db = MongoEngine()
 db.init_app(app)
