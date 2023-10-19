@@ -18,41 +18,20 @@
 Advertisement - Redirects Page
 [![Watch the video](https://img.youtube.com/vi/VAieiJGv9_Q/maxresdefault.jpg)](https://youtu.be/VAieiJGv9_Q)
 
-<!-- Insert ad video here -->
-
 CareerPulse Tracker
 
 Are you tired of managing your job applications and projects using cumbersome Excel spreadsheets? Our job and project tracker application is here to simplify the process and make it stress-free.
 
 ## Features
 
-**Job Application Tracking:**
-- *Wish List Management:* Keep track of the jobs you're interested in, making it easy to stay organized and updated on potential opportunities.
-- *Application History:* Track the companies you've already applied to and maintain a record of any rejections. This helps you keep a clear overview of your job application journey.
-- *Wishlist Additions:* Quickly add any prospective work offers to your applicant's wishlist, ensuring nothing slips through the cracks.
-
-**Project Management Integration:**
-- Our application isn't just limited to job applications; it can be expanded into a versatile project management tool with the following features:
-
-  **Dynamic Board and Column Creation:**
-  - *Create Multiple Boards:* Designate different boards for distinct projects, jobs, or categories. This keeps your projects neatly organized and separate.
-  - *Customize Columns:* Tailor each board by creating and managing columns that represent various stages, tasks, or categories related to the project. This level of customization allows you to adapt the application to your unique needs.
-
-  **Column Customization:**
-  - *Flexible Columns:* Define the title and description for each column. Customize columns to match your workflow stages, project components, or job application requirements.
-
-  **Update Tracking:**
-  - *Progress Updates:* Inside each column, add updates to track the details and progress of individual tasks, job applications, or project components.
-  - *Detailed Updates:* Each update can include a title, description, and important events relevant to the specific task or job application.
-
-  **Stage Tracking:**
-  - *Workflow Stages:* Assign stages to updates to indicate where they are in the workflow. Whether it's "To Do," "In Progress," "Completed," or customized stages, you have the flexibility to categorize tasks and applications effectively.
-
-  **Drag and Drop Functionality:**
-  - *Efficient Workflow:* Utilize drag and drop functionality to move updates from one column to another. This feature enhances the user experience and makes task and job progression tracking a breeze.
-
-  **Data Persistence:**
-  - *Secure Data Storage:* Ensure that your board configurations, columns, updates, and user data are safely stored in a database for long-term accessibility. Your information is always just a click away.
+- **Job Application Tracking**
+- **Project Management Integration**
+- **Dynamic Board and Column Creation:**
+- **Column Customization:**
+- **Update Tracking**
+- **Stage Tracking**
+- **Drag and Drop Functionality:**
+- **Data Persistence:**
 
 ## Get Organized, Stay on Track
 
