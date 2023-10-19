@@ -1,28 +1,27 @@
-## IMPROVEMENTS
+In the project's earlier version, users were restricted to static fields, limiting their ability to effectively manage and track applications using predefined column values. Moreover, all applications were displayed in a single list, making it challenging for users to efficiently organize and monitor their applications. To address these limitations, we've implemented several enhancements.
 
-When our team took over the project from the previous group, we thoroughly reviewed the project in order to establish an effective takeover strategy. We attempted to improve the project in as many ways as possible. We've detailed the enhancements we've made in this document.
+## Key Features and Improvements:
 
-* Easier setup instructions and Installation process:
-The previous instructions were cumbersome and unnecessarily manual. In Phase 2, we have provided shell scripts that automate the installation and setup of all required packages. We also included startup and shutdown scripts, preventing the need for multiple terminals as the previous instructions suggested.
+*1. Dynamic Board and Column Creation:*
+   - Users can now create multiple boards, each representing different projects, jobs, or categories.
+   - Within each board, users have the flexibility to dynamically create and manage columns that reflect various stages or categories relevant to the project.
 
-* Restructuring the Flask application:
-The previous structure of the Flask application from phase 1 was not compatible for the testing. In this Phase 2, we have restructured the Flask application file app.py and have written tests on the API endpoints.
+*2. Column Customization:*
+   - Users have the freedom to customize each column by assigning titles and descriptions.
+   - They can define workflow stages, categories, or other pertinent information to cater to their specific use case.
 
-* Writing unit tests:
-In Phase 1, there were no unit tests written for the application. In Phase 2, we have written unit tests using pytest and pytest-mock. More information on the test cases can be found in the Software documentation file. 
+*3. Update Tracking:*
+   - Inside each column, users can add updates to monitor the progress and details of individual tasks, job applications, or project components.
+   - Each update can include a title, description, and significant events associated with the particular task or job application.
 
-* Introducing Database:
-Previously, the company data was stored in a CSV file. We have constructed a database to store all the information of the companies. We have used MongoDB to create the database.
+*4. Stage Tracking:*
+   - Users can designate a stage to each update, indicating its position in the workflow. This could be standard stages like "To Do," "In Progress," "Completed," or customized stages according to the user's preferences.
 
-* Removing unused codes and updating Gitignore:
-We have removed some of the project's local environment related files which should not be present in the repository. For example: pycache folder. Previously, the gitignore files were not capable of ignoring e.g. the pycache folder. So, we have also updated the gitignore file so that no unnecessary files get pushed in future commits.
+*5. Drag and Drop Functionality:*
+   - To enhance the user experience and streamline board management, users can make use of drag and drop functionality to move updates from one column to another.
+   - This feature simplifies the tracking of task progression, for example, moving a task from "To Do" to "In Progress" when work commences.
 
-* CI/CD Pipeline for Frontend app:
-We have created a CI/CD pipeline for the react(frontend) application using Github Actions. The React application has been deployed to Github pages. The application can be accessed using the following link https://team-glare.github.io/application-tracking-system/ 
-Since the flask(backend) application has not been deployed, the react application is not fully functional.  
+*6. Data Persistence:*
+   - The application ensures that board configurations, columns, updates, and user data are securely stored in a database for long-term accessibility.
 
-* Adding Linters, Code formatters:
-We have added super-linter to our CI pipeline using Github Actions.
-
-* Adding Software documentation:
-We have added elaborate software documentation mentioning all the endpoint details.
+These enhancements provide users with a highly adaptable job tracker and project management system, enabling them to tailor boards, columns, and updates to align with their specific needs. The drag-and-drop feature and dynamic column creation significantly enhance the user experience, making the tracking of tasks and jobs more efficient and interactive.
