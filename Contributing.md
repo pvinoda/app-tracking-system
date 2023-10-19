@@ -41,11 +41,34 @@ Any suggestions or changes to improve the project would be appreciated.
 4. We will go through the request and merge it after the testing. 
 ##
 
+# Code Style and Guidelines
+We maintain a consistent code style to ensure readability and maintainability across the project. Before contributing, please familiarize yourself with our coding guidelines:
 
+1. Use meaningful variable and function names.
+2. Comment your code as needed for clarity.
+3. Keep lines of code reasonably short (around 80-100 characters).
+4. Follow the style guidelines for JavaScript and Pythong, depending on the files being worked on.
+##
 
+# Branching Strategy:
 
+We follow the branching strategy for our project. Here's how it works:
 
+main: The master branch represents the latest stable release of the project. This branch is production-ready.
+feature branches: for fixing bugs or implementing new features, create a new branch off main. Use a descriptive names for the work being done.
 
+When you are ready to contribute, commit your changes to your new branch, create a pull request, and merge into main
+Make sure to properly document commits and pull requests.
+##
+
+# Issue Tracking:
+
+We use GitHub Issues to track tasks, bugs, and enhancements. Here's how to work with issues:
+
+1. To report a bug or request a new feature, please search for existing issues before creating a new one.
+2. When creating a new issue, be as clear and descriptive as possible.
+3. If you're interested in working on an issue, comment on it to let others know.
+4. Use issue templates, if available, to provide structured information.
 
 
 # Contributor Covenant Code of Conduct
