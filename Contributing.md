@@ -47,7 +47,7 @@ We maintain a consistent code style to ensure readability and maintainability ac
 1. Use meaningful variable and function names.
 2. Comment your code as needed for clarity.
 3. Keep lines of code reasonably short (around 80-100 characters).
-4. Follow the style guidelines for JavaScript and Pythong, depending on the files being worked on.
+4. Follow the style guidelines for JavaScript and Python, depending on the files being worked on.
 ##
 
 # Branching Strategy:
