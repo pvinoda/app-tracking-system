@@ -2,9 +2,13 @@ import React, { useState, useEffect } from "react";
 import ApplicationPage from "./application";
 import LoginPage from "./login/LoginPage";
 import $ from "jquery";
+import boardsSlice from "./redux/boardsSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 function App() {
   const [auth, setAuth] = useState(false);
+  const boardData = useSelector((state) => state.boards);
+  const dispatch = useDispatch();
 
   const getDataFunction = () => {
     $.ajax({
@@ -20,18 +24,25 @@ function App() {
         getData: "getData",
       }),
       success: (boards) => {
-        console.log("BOARDS", boards);
+        dispatch(boardsSlice.actions.setInitialData({ initialData: boards }));
+        console.log("SRJ BOARDS", boards);
+        console.log("boards", boardData);
       },
     });
   };
 
   const handleLogout = () => {
     localStorage.removeItem("token");
+    dispatch(boardsSlice.actions.deleteInitialData());
     setCurrentPage(
       <LoginPage
         side={() =>
           setCurrentPage(
-            <ApplicationPage getData={getDataFunction} logout={handleLogout} />
+            <ApplicationPage
+              initialData={boardData}
+              getData={getDataFunction}
+              logout={handleLogout}
+            />
           )
         }
       />
@@ -42,7 +53,11 @@ function App() {
     <LoginPage
       side={() =>
         setCurrentPage(
-          <ApplicationPage getData={getDataFunction} logout={handleLogout} />
+          <ApplicationPage
+            initialData={boardData}
+            getData={getDataFunction}
+            logout={handleLogout}
+          />
         )
       }
     />
@@ -51,7 +66,11 @@ function App() {
     if (localStorage.getItem("token")) {
       setAuth(true);
       setCurrentPage(
-        <ApplicationPage getData={getDataFunction} logout={handleLogout} />
+        <ApplicationPage
+          initialData={boardData}
+          getData={getDataFunction}
+          logout={handleLogout}
+        />
       );
     }
   }, [auth]);
