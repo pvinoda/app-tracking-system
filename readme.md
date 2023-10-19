@@ -138,9 +138,9 @@ Currently, we have five fundamental features in our project:
 
 To install all required packages, while within the context of the project root directory, run:
 
-```bash
+```
 ./setup.sh
-
+```
 This will handle all npm and pip package installations required for both the front and backend.
 
 *If the script says "command not found" or something similar, run chmod +x ./setup.sh. This grants the script execution privileges. Depending on your setup, this may occur for the boot_dockerless files, amongst others. The same command will fix the issue.*
