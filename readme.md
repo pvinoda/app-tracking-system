@@ -4,7 +4,7 @@
 
 
 
-[![GitHub license](https://img.shields.io/github/license/kingan1/application-tracking-system)](https://github.com/kingan1/application-tracking-system/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/kingan1/application-tracking-system)](https://github.com/SETeam59/application-tracking-system/blob/main/LICENSE)
 [![DOI](https://zenodo.org/badge/426259091.svg)](https://zenodo.org/badge/latestdoi/426259091)
 [![codecov](https://codecov.io/gh/kingan1/application-tracking-system/branch/main/graph/badge.svg)](https://codecov.io/gh/kingan1/application-tracking-system)
 ![GitHub issues](https://img.shields.io/github/issues/kingan1/application-tracking-system)
@@ -14,7 +14,10 @@
 [![Build and Deploy Frontend](https://github.com/SETeam59/application-tracking-system/actions/workflows/frontend_CI_CD.yml/badge.svg)](https://github.com/SETeam59/application-tracking-system/actions/workflows/frontend_CI_CD.yml)
 [![Super Linter](https://github.com/SETeam59/application-tracking-system/actions/workflows/super-linter.yml/badge.svg)](https://github.com/SETeam59/application-tracking-system/actions/workflows/super-linter.yml)
 
-#      CareerPulse-Tracker - Your Job Tracking Assistant
+#      Career Pulse Tracker - Your Job Tracking Assistant
+
+Advertisement - Redirects Page
+[![Watch the video](https://img.youtube.com/vi/VAieiJGv9_Q/maxresdefault.jpg)](https://youtu.be/VAieiJGv9_Q)
 
 <!-- https://user-images.githubusercontent.com/43064854/135554150-c06afd4e-d223-47e3-b123-b45f9cd1b87a.mp4 -->
 
