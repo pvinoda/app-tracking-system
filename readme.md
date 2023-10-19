@@ -10,15 +10,15 @@ https://user-images.githubusercontent.com/89501363/144725439-5d9191f8-df13-4814-
 [![Build and Deploy Frontend](https://github.com/kingan1/application-tracking-system/actions/workflows/frontend_CI_CD.yml/badge.svg)](https://github.com/kingan1/application-tracking-system/actions/workflows/frontend_CI_CD.yml)
 [![Super Linter](https://github.com/kingan1/application-tracking-system/actions/workflows/super-linter.yml/badge.svg)](https://github.com/kingan1/application-tracking-system/actions/workflows/super-linter.yml)
 
-#      J-Tracker - Your Job Tracking Assistant
+#      Career Pulse Tracker - Your Job Tracking Assistant
 
-https://user-images.githubusercontent.com/43064854/135554150-c06afd4e-d223-47e3-b123-b45f9cd1b87a.mp4
+Advertisement - Redirects Page
+[![Watch the video](https://img.youtube.com/vi/VAieiJGv9_Q/maxresdefault.jpg)](https://youtu.be/VAieiJGv9_Q)
+
 
 The process of applying for jobs and internships is not a cakewalk. Managing job applications is a time-consuming process. Due to the referrals and deadlines, the entire procedure can be stressful. Our application allows you to track and manage your job application process, as well as regulate it, without the use of cumbersome Excel spreadsheets.
 
-
-Our application keeps track of the jobs you've added to your wish list. It also keeps track of the companies you've already applied to and keeps a list of any rejections. Rather than having the user browse each company's site for potential prospects, our application allows the applicant to search for them directly using basic keywords. Any prospective work offers can then be added to the applicant's wishlist.
-
+Our application keeps track of the jobs in whichever way you like. The user can make as many columns as they would like for a variety of reasons such as applied, interviewed, rejected, etc. Our aim is to make the application as modular as possible to fit a wide variety of user needs. 
 
 ## Table of contents
 
