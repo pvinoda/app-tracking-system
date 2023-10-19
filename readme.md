@@ -22,17 +22,6 @@ CareerPulse Tracker
 
 Are you tired of managing your job applications and projects using cumbersome Excel spreadsheets? Our job and project tracker application is here to simplify the process and make it stress-free.
 
-## Features
-
-- **Job Application Tracking**
-- **Project Management Integration**
-- **Dynamic Board and Column Creation:**
-- **Column Customization:**
-- **Update Tracking**
-- **Stage Tracking**
-- **Drag and Drop Functionality:**
-- **Data Persistence:**
-
 ## Get Organized, Stay on Track
 
 Our application provides a highly customizable job tracker and project management system that empowers you to design boards, columns, and updates to meet your specific needs. The drag-and-drop feature and dynamic column creation make task and job tracking more efficient and user-friendly. Say goodbye to Excel spreadsheets and hello to a stress-free job application and project management experience.
