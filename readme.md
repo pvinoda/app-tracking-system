@@ -6,8 +6,7 @@
 [![GitHub license](https://img.shields.io/github/license/SETeam59/application-tracking-system)](https://github.com/SETeam59/application-tracking-system/blob/main/LICENSE)
 [![DOI](https://zenodo.org/badge/707286618.svg)](https://zenodo.org/doi/10.5281/zenodo.10023565)
 [![codecov](https://codecov.io/gh/SETeam59/application-tracking-system/branch/main/graph/badge.svg)](https://codecov.io/gh/SETeam59/application-tracking-system)
-![GitHub issues](https://img.shields.io.github/issues/SETeam59/application-tracking-system)
-![GitHub issues](https://img.shields.io/github/issues-closed/SETeam59/application-tracking-system)
+![GitHub issues](https://img.shields.io/github/issues/SETeam59/application-tracking-system)
 ![GitHub top language](https://img.shields.io/github/languages/top/SETeam59/application-tracking-system)
 
 [![Build and Deploy Frontend](https://github.com/SETeam59/application-tracking-system/actions/workflows/frontend_CI_CD.yml/badge.svg)](https://github.com/SETeam59/application-tracking-system/actions/workflows/frontend_CI_CD.yml)
