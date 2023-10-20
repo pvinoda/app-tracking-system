@@ -3,12 +3,12 @@
 
 <!-- Insert Functionality video here -->
 
-[![GitHub license](https://img.shields.io/github/license/kingan1/application-tracking-system)](https://github.com/SETeam59/application-tracking-system/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/SETeam59/application-tracking-system)](https://github.com/SETeam59/application-tracking-system/blob/main/LICENSE)
 [![DOI](https://zenodo.org/badge/707286618.svg)](https://zenodo.org/doi/10.5281/zenodo.10023565)
-[![codecov](https://codecov.io/gh/kingan1/application-tracking-system/branch/main/graph/badge.svg)](https://codecov.io/gh/kingan1/application-tracking-system)
-![GitHub issues](https://img.shields.io.github/issues/kingan1/application-tracking-system)
-![GitHub issues](https://img.shields.io/github/issues-closed/kingan1/application-tracking-system)
-![GitHub top language](https://img.shields.io/github/languages/top/kingan1/application-tracking-system)
+[![codecov](https://codecov.io/gh/SETeam59/application-tracking-system/branch/main/graph/badge.svg)](https://codecov.io/gh/SETeam59/application-tracking-system)
+![GitHub issues](https://img.shields.io.github/issues/SETeam59/application-tracking-system)
+![GitHub issues](https://img.shields.io/github/issues-closed/SETeam59/application-tracking-system)
+![GitHub top language](https://img.shields.io/github/languages/top/SETeam59/application-tracking-system)
 
 [![Build and Deploy Frontend](https://github.com/SETeam59/application-tracking-system/actions/workflows/frontend_CI_CD.yml/badge.svg)](https://github.com/SETeam59/application-tracking-system/actions/workflows/frontend_CI_CD.yml)
 [![Super Linter](https://github.com/SETeam59/application-tracking-system/actions/workflows/super-linter.yml/badge.svg)](https://github.com/SETeam59/application-tracking-system/actions/workflows/super-linter.yml)
@@ -82,15 +82,13 @@ The introductory visual interface displayed from which a user is able to access 
 - Updated reloading issues
 - Fix linting issues
 
-#### Version 1.0.3
+#### Version 1.3
 
 - Updated badges for the repository
 - Users' database implementation
 - Add logout endpoint and update middleware
 - Login frontend for login and signup functionality
 
-## Roadmap
-![Roadmap](https://github.com/prithvish-doshi-17/application-tracking-system/blob/main/resources/Roadmap%20-%202.PNG)
 
 ## Future Scope
 
