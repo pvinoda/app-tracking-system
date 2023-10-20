@@ -28,7 +28,7 @@
 | Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people) | 3 | Installation steps and requirements.txt file ensure that everyone is using the same tools for development |
 | Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share the screen, they demonstrate the system running on their computer) | 3 | All tools needed for development are listed in the README under the installation section |
 | Evidence that the members of the team are working across multiple places in the code base | 3 | All group members worked on multiple features of the application |
-| Short release cycles | 1 |  |
+| Short release cycles | 3 |  |
 | Online sustainability evaluation |  |
 | Does your website and documentation provide a clear, high-level overview of your software? | Y | README |
 | Does your website and documentation clearly describe the type of user who should use your software? | Y | People who want to manage their job applications easily |
