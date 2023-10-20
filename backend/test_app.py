@@ -32,7 +32,7 @@ def client():
         password = info["password"]
         app.config["MONGODB_SETTINGS"] = {
             "db": "appTracker",
-            "host": f'mongodb+srv://{username}:{password}@cluster0.en3fo.mongodb.net/todolistDB?retryWrites="true"&w=majority',
+            "host": f'mongodb+srv://{username}:{password}@cluster0.en3fo.mongodb.net/todolistDB?retryWrites=true&w=majority',
         }
     db = MongoEngine()
     db.disconnect()
@@ -51,17 +51,17 @@ def user(client):
     :return: the user object and auth token
     """
     # print(request.data)
-    data = {"username": "newest123",
-            "password": "123456", "fullName": "fullName"}
+    data = {"username": "test123",
+            "password": "123456", "fullName": "Tester"}
 
     user = Users.objects(username=data["username"])
-    user.first()["applications"] = []
+    user.first()["board"] = []
     user.first().save()
     rv = client.post("/users/login", json=data)
     jdata = json.loads(rv.data.decode("utf-8"))
     header = {"Authorization": "Bearer " + jdata["token"]}
     yield user.first(), header
-    user.first()["applications"] = []
+    user.first()["board"] = []
     user.first().save()
 
 
