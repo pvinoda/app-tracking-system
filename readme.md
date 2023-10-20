@@ -97,7 +97,7 @@ If a user wishes to delete the board then they can delete the board as well
 ### Editing and Deleting the task
 
 A user can edit the tasks as specified in the pic below. This updates the database if the operation is edit and removes the task from database if the task is deleted.
-<p align="center"><img width="700" src="./resources/editing_and_deleting_the_tasks.PNG"></p>
+<p align="center"><img width="700" src="resources\editing_and_deleting_the_tasks.jpg"></p>
 
 ### Night mode implementation
 
