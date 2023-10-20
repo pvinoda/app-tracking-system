@@ -3,12 +3,12 @@
 | Video | 3 | README has a video of all functionality |
 | Workload is spread over the whole team (one team member is often X times more productive than the others...) | 3 | Responsibility was spread evenly between the group members in terms of functionality but nevertheless, here is a track record that everyone is contributing a lot |
 | Number of commits | 3 | Overall, there were a significant number of quality commits - [GitHub Commits](https://github.com/SETeam59/application-tracking-system/commits/main) |
-| Number of commits: by different people | 3 | "Saketh - 3 (under different account) + Sharan - Nayan - Hruthwik -" |
+| Number of commits: by different people | 3 | Note that Saketh commited code under a different account "svruddar" https://github.com/SETeam59/application-tracking-system/graphs/contributors |
 | Issues reports: there are many | 3 | All code changes had relevant issues they were linked to: [GitHub Issues](https://github.com/SETeam59/application-tracking-system/issues?q=is:open+is:issue) |
 | Issues are being closed | 3 | Issues are closed after code-related branches were closed |
 | DOI badge: exists | 3 | in README |
 | Docs: doco generated, format not ugly | 3 | README, show the rest of things |
-| Docs: what: point descriptions of each class/function (in isolation) |  |
+| Docs: what: point descriptions of each class/function (in isolation) | 3 |
 | Docs: how: for common use cases X, Y, Z mini-tutorials showing worked examples on how to do X, Y, Z | 3 | README includes steps of all the different functionality with screenshots |
 | Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing | 3 | README and Advertisement |
 | Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. | 3 | Advertisement in README |
