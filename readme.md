@@ -71,14 +71,42 @@ The introductory visual interface displayed from which a user is able to registe
 
 ### Home Screen
 
-The introductory visual interface displayed from which a user is able to access different cards - Waitlisted applications, Waiting for Referrals, Applied Jobs, Application Status. The user can also add cards through this screen.
+The introductory visual interface displayed from which a user is able to access different updates on the application - like Waiting for Referrals, Applied Jobs, Application Status. The user can also add boards through this screen.
 
-<p align="center"><img width="700" src="./resources/home_screen.png"></p>
+<p align="center"><img width="700" src="./resources/homepage.png"></p>
 
-### Add Multiple Boards
+### Add New Boards
 
-<p align="center"><img width="700" src="./resources/search.png"></p>
-<p align="center"><img width="700" src="./resources/newjobdetails1.PNG"></p>
+A user can add a new board to keep track of data
+<p align="center"><img width="700" src="./resources/Add new board.png"></p>
+
+### Add New Columns
+
+New columns can be added by the user if required
+<p align="center"><img width="700" src="./resources/Adding new column.PNG"></p>
+
+### Updating the board
+
+A user can update the status of the application like shown in the picture
+<p align="center"><img width="700" src="./resources/Updating the board.PNG"></p>
+
+### Deleting Boards
+
+If a user wishes to delete the board then they can delete the board as well
+<p align="center"><img width="700" src="./resources/Delete board.PNG"></p>
+
+
+
+### Editing and Deleting the task
+
+A user can edit the tasks as specified in the pic below. This updates the database if the operation is edit and removes the task from database if the task is deleted.
+<p align="center"><img width="700" src="./resources/Editing and deleting the tasks.PNG"></p>
+
+### Night mode implementation
+
+We have implemented the night mode feature as well which diversifies the application.
+<p align="center"><img width="700" src="./resources/Night mode.PNG"></p>
+<p align="center"><img width="700" src="./resources/Night mode edit board.PNG"></p>
 
 ### What's New
 
