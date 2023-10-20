@@ -55,13 +55,13 @@ def user(client):
             "password": "123456", "fullName": "fullName"}
 
     user = Users.objects(username=data["username"])
-    user.first()["applications"] = []
+    user.first()["board"] = []
     user.first().save()
     rv = client.post("/users/login", json=data)
     jdata = json.loads(rv.data.decode("utf-8"))
     header = {"Authorization": "Bearer " + jdata["token"]}
     yield user.first(), header
-    user.first()["applications"] = []
+    user.first()["board"] = []
     user.first().save()
 
 
