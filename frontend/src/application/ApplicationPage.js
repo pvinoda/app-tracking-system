@@ -19,7 +19,6 @@ export default class CardBoard extends Component {
     this.createCardClass = this.createCardClass.bind(this)
   }
 
-  // get initial data to render the root page
   getData () {
     return $.ajax({
       url: 'http://localhost:5000/applications',
@@ -31,18 +30,11 @@ export default class CardBoard extends Component {
       },
       credentials: 'include'
     })
-    // getApplications().then((res) => {
-
-    // }).catch((error) => {
-    //         alert("Error while retrieving applications");
-    //     })
   }
 
   componentDidMount () {
-    // fetch the data only after this component is mounted
     this.getData()
       .done((data) => {
-        // console.log(data);
         const result = this.groupApplication(data)
         const cardTitles = this.createCardTitle(result)
         const cardClass = this.createCardClass(result)
