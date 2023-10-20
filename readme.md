@@ -64,13 +64,13 @@ Our application provides a highly customizable job tracker and project managemen
 
 The introductory visual interface displayed from which a user is able to register and log into the application.
 
-<p align="center"><img width="700" src="./resources/login.png"></p>
+<p align="center"><img width="700" src="resources\login.jpg"></p>
 
 ### Home Screen
 
 The introductory visual interface displayed from which a user is able to access different updates on the application - like Waiting for Referrals, Applied Jobs, Application Status. The user can also add boards through this screen.
 
-<p align="center"><img width="700" src="./resources/Homepage.png"></p>
+<p align="center"><img width="700" src="resources\Homepage.jpg"></p>
 
 ### Add New Boards
 
@@ -85,12 +85,12 @@ New columns can be added by the user if required
 ### Updating the board
 
 A user can update the status of the application like shown in the picture
-<p align="center"><img width="700" src="./resources/Updating_the_board.PNG"></p>
+<p align="center"><img width="700" src="resources\Updating_the_board.jpg"></p>
 
 ### Deleting Boards
 
 If a user wishes to delete the board then they can delete the board as well
-<p align="center"><img width="700" src="./resources/delete_board.PNG"></p>
+<p align="center"><img width="700" src="resources\delete_board.jpg"></p>
 
 
 
@@ -102,8 +102,8 @@ A user can edit the tasks as specified in the pic below. This updates the databa
 ### Night mode implementation
 
 We have implemented the night mode feature as well which diversifies the application.
-<p align="center"><img width="700" src="./resources/night_mode.PNG"></p>
-<p align="center"><img width="700" src="./resources/night_mode_edit_board.PNG"></p>
+<p align="center"><img width="700" src="resources\night_mode.jpg"></p>
+<p align="center"><img width="700" src="resources\night_mode_edit_board.jpg"></p>
 
 ### What's New
 
