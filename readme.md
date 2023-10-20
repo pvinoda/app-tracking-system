@@ -4,7 +4,7 @@
 <!-- Insert Functionality video here -->
 
 [![GitHub license](https://img.shields.io/github/license/kingan1/application-tracking-system)](https://github.com/SETeam59/application-tracking-system/blob/main/LICENSE)
-[![DOI](https://zenodo.org/badge/707286618.svg)](https://zenodo.org/badge/latestdoi/707286618)
+[![DOI](https://zenodo.org/badge/707286618.svg)](https://zenodo.org/doi/10.5281/zenodo.10023565)
 [![codecov](https://codecov.io/gh/kingan1/application-tracking-system/branch/main/graph/badge.svg)](https://codecov.io/gh/kingan1/application-tracking-system)
 ![GitHub issues](https://img.shields.io.github/issues/kingan1/application-tracking-system)
 ![GitHub issues](https://img.shields.io/github/issues-closed/kingan1/application-tracking-system)
