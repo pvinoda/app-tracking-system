@@ -5,7 +5,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/SETeam59/application-tracking-system)](https://github.com/SETeam59/application-tracking-system/blob/main/LICENSE)
 [![DOI](https://zenodo.org/badge/707286618.svg)](https://zenodo.org/doi/10.5281/zenodo.10023565)
-[![codecov](https://codecov.io/gh/SETeam59/application-tracking-system/branch/main/graph/badge.svg)](https://codecov.io/gh/SETeam59/application-tracking-system)
+<!-- [![codecov](https://codecov.io/gh/SETeam59/application-tracking-system/branch/main/graph/badge.svg)](https://codecov.io/gh/SETeam59/application-tracking-system) -->
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 [![Issues](https://img.shields.io/github/issues/SETeam59/application-tracking-system)](https://GitHub.com/SETeam59/application-tracking-system/)
 [![Issues Closed](https://img.shields.io/github/issues-closed/SETeam59/application-tracking-system)](https://GitHub.com/SETeam59/application-tracking-system/)
@@ -17,8 +17,6 @@
 [![Downloads](https://img.shields.io/github/downloads/SETeam59/application-tracking-system/total)](https://GitHub.com/SETeam59/application-tracking-system/)
 [![Top Language](https://img.shields.io/github/languages/top/SETeam59/application-tracking-system)](https://GitHub.com/SETeam59/application-tracking-system/)
 [![Release](https://img.shields.io/github/v/release/SETeam59/application-tracking-system)](https://gitHub.com/SETeam59/application-tracking-system)
-[![Build and Deploy Frontend](https://github.com/SETeam59/application-tracking-system/actions/workflows/frontend_CI_CD.yml/badge.svg)](https://github.com/SETeam59/application-tracking-system/actions/workflows/frontend_CI_CD.yml)
-[![Super Linter](https://github.com/SETeam59/application-tracking-system/actions/workflows/super-linter.yml/badge.svg)](https://github.com/SETeam59/application-tracking-system/actions/workflows/super-linter.yml)
 
 
 
@@ -98,6 +96,7 @@ The introductory visual interface displayed from which a user is able to access 
 - Users' database implementation
 - Add logout endpoint and update middleware
 - Login frontend for login and signup functionality
+- Added Dark Mode to improve user experience
 
 
 ## Future Scope
