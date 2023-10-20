@@ -51,8 +51,8 @@ def user(client):
     :return: the user object and auth token
     """
     # print(request.data)
-    data = {"username": "newest123",
-            "password": "123456", "fullName": "fullName"}
+    data = {"username": "test123",
+            "password": "123456", "fullName": "Tester"}
 
     user = Users.objects(username=data["username"])
     user.first()["board"] = []
