@@ -32,7 +32,7 @@ def client():
         password = info["password"]
         app.config["MONGODB_SETTINGS"] = {
             "db": "appTracker",
-            "host": f'mongodb+srv://{username}:{password}@cluster0.en3fo.mongodb.net/todolistDB?retryWrites="true"&w=majority',
+            "host": f'mongodb+srv://{username}:{password}@cluster0.en3fo.mongodb.net/todolistDB?retryWrites=true&w=majority',
         }
     db = MongoEngine()
     db.disconnect()
