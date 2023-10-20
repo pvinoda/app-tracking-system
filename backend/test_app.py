@@ -54,9 +54,14 @@ def user(client):
     data = {"username": "test123",
             "password": "123456", "fullName": "Tester"}
 
-    user = Users.objects(username=data["username"])
-    user.first()["board"] = []
-    user.first().save()
+    user = Users.objects(username=data["username"]).first()
+
+    if user:
+        user["board"] = []  # Assuming "board" is a field in your User model
+        user.save()  # Save the changes to the user object
+    else:
+        print("User not found with username:", data["username"])
+
     rv = client.post("/users/login", json=data)
     jdata = json.loads(rv.data.decode("utf-8"))
     header = {"Authorization": "Bearer " + jdata["token"]}
