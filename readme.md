@@ -70,17 +70,17 @@ The introductory visual interface displayed from which a user is able to registe
 
 The introductory visual interface displayed from which a user is able to access different updates on the application - like Waiting for Referrals, Applied Jobs, Application Status. The user can also add boards through this screen.
 
-<p align="center"><img width="700" src="./resources/homepage.png"></p>
+<p align="center"><img width="700" src="./resources/Homepage.png"></p>
 
 ### Add New Boards
 
 A user can add a new board to keep track of data
-<p align="center"><img width="700" src="./resources/add_new_board.png"></p>
+<p align="center"><img width="700" src="resources\add_new_board.jpg"></p>
 
 ### Add New Columns
 
 New columns can be added by the user if required
-<p align="center"><img width="700" src="./resources/adding_new_column.PNG"></p>
+<p align="center"><img width="700" src="resources\adding_new_column.jpg"></p>
 
 ### Updating the board
 
