@@ -33,7 +33,6 @@ jobs:
           pwd
           pytest --cov-report xml:cov.xml --cov=./ ./
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
-        run: codecov -f backend/cov.xml
+        uses: codecov/codecov-action@v1
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
