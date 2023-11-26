@@ -150,7 +150,7 @@ def create_app():
                 _ = data["fullName"]
             except:
                 return jsonify({"error": "Missing fields in input"}), 400
-
+            
             username_exists = Users.objects(username=data["username"])
             if len(username_exists) != 0:
                 return jsonify({"error": "Username already exists"}), 400
@@ -463,7 +463,7 @@ with open("application.yml") as f:
     password = info["password"]
     app.config["MONGODB_SETTINGS"] = {
         "db": "appTracker",
-        "host": f"mongodb+srv://{username}:{password}@cluster0.en3fo.mongodb.net/todolistDB?retryWrites=true&w=majority",
+        "host": f"mongodb+srv://{username}:{password}@cluster0.acqxddj.mongodb.net/ats?retryWrites=true&w=majority",
     }
 db = MongoEngine()
 db.init_app(app)
