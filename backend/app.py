@@ -403,6 +403,8 @@ def create_app():
         """
         try:
             userid = get_userid_from_header()
+            print("request s", request.data)
+            return (request.get_json()), 200
             try:
                 file = request.files["file"].read()
             except:
