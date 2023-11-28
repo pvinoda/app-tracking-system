@@ -11,12 +11,12 @@ function Task({ colIndex, taskIndex }) {
   const [isTaskModalOpen, setIsTaskModalOpen] = useState(false);
 
   let profileColor = 'black'
-  if(task.profileMatch>85){
+  if(parseInt(task.profileMatch)>85){
     profileColor = 'green';
-  } else if(task.profileMatch>70 && task.profileMatch<=85){
+  } else if(parseInt(task.profileMatch)>60 && parseInt(task.profileMatch)<=85){
     profileColor = 'orange';
   } else {
-    profileColor = 'red;'
+    profileColor = 'red'
   }
 
   let completed = 0;
