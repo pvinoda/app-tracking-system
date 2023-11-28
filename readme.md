@@ -70,40 +70,27 @@ The introductory visual interface displayed from which a user is able to registe
 
 The introductory visual interface displayed from which a user is able to access different updates on the application - like Waiting for Referrals, Applied Jobs, Application Status. The user can also add boards through this screen.
 
-<p align="center"><img width="700" src="resources\Homepage.jpg"></p>
+![WhatsApp Image 2023-11-27 at 21 04 54](https://github.com/pvinoda/app-tracking-system/assets/46294427/89316fc6-3f8b-4ca7-8597-fb0193f2d4cb)
 
 ### Add New Boards
 
 A user can add a new board to keep track of data
-<p align="center"><img width="700" src="resources\add_new_board.jpg"></p>
+![WhatsApp Image 2023-11-27 at 21 42 06 (1)](https://github.com/pvinoda/app-tracking-system/assets/46294427/587c001a-8354-4f4b-8363-1640ee45b23f)
 
 ### Add New Columns
 
 New columns can be added by the user if required
 <p align="center"><img width="700" src="resources\adding_new_column.jpg"></p>
 
-### Updating the board
-
-A user can update the status of the application like shown in the picture
-<p align="center"><img width="700" src="resources\Updating_the_board.jpg"></p>
-
-### Deleting Boards
-
-If a user wishes to delete the board then they can delete the board as well
-<p align="center"><img width="700" src="resources\delete_board.jpg"></p>
+### Gamification Incentives
+![WhatsApp Image 2023-11-27 at 21 04 54 (3)](https://github.com/pvinoda/app-tracking-system/assets/46294427/381e6c24-76cf-4fb2-aef4-496961e827bc)
 
 
-
-### Editing and Deleting the task
-
-A user can edit the tasks as specified in the pic below. This updates the database if the operation is edit and removes the task from database if the task is deleted.
-<p align="center"><img width="700" src="resources\editing_and_deleting_the_tasks.jpg"></p>
 
 ### Night mode implementation
 
 We have implemented the night mode feature as well which diversifies the application.
-<p align="center"><img width="700" src="resources\night_mode.jpg"></p>
-<p align="center"><img width="700" src="resources\night_mode_edit_board.jpg"></p>
+![WhatsApp Image 2023-11-27 at 21 04 54 (5)](https://github.com/pvinoda/app-tracking-system/assets/46294427/573b9eaf-1b4f-4b50-a85b-41769b43d8d5)
 
 ## Documentation
 

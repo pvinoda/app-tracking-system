@@ -1,5 +1,5 @@
 ### link to video
-[https://youtu.be/S7NABt8ZBcQ?si=hseAnhM3ENS1fgn1](https://youtu.be/S7NABt8ZBcQ?si=hseAnhM3ENS1fgn1)
+[Youtube Link](https://youtu.be/S7NABt8ZBcQ?si=hseAnhM3ENS1fgn1)
 
 
 ### Scorecard
@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | Video | 3 | README has a video of all functionality |
 | Workload is spread over the whole team (one team member is often X times more productive than the others...) | 3 | Responsibility was spread evenly between the group members in terms of functionality but nevertheless, here is a track record that everyone is contributing a lot |
-| Number of commits | 3 | Overall, there were a significant number of quality commits -  |
+| Number of commits | 3 | Overall, there were a significant number of quality commits - https://github.com/pvinoda/app-tracking-system/graphs/commit-activity |
 | Number of commits: by different people | 3 |  |
 | Issues reports: there are many | 3 | All code changes had relevant issues they were linked to:  |
 | Issues are being closed | 3 | Issues are closed after code-related branches were closed |
@@ -26,7 +26,7 @@
 | Other automated analysis tools | 3 | Pylint, CodeCoverage, GitHub Actions, Pytest |
 | Test cases exist | Y |
 | Test cases are routinely executed | 3 | Tests are executed on every commit, GitHub Actions |
-| The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up | 3 | [Contributing.md](https://github.com/Sharansrj567/application-tracking-system/blob/ui-v2/Contributing.md) |
+| The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up | 3 | [Contributing.md](https://github.com/pvinoda/app-tracking-system/blob/main/Contributing.md) |
 | Issues are discussed before they are closed | 2 | Issues have relevant comments |
 | Chat channel: exists | 3 |  WhatsApp Group evidence shown |
 | Test cases: a large proportion of the issues related to handling failing cases |  |
