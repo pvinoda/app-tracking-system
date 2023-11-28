@@ -4,7 +4,7 @@
 <!-- Insert Functionality video here -->
 
 [![GitHub license](https://img.shields.io/github/license/SETeam59/application-tracking-system)](https://github.com/SETeam59/application-tracking-system/blob/main/LICENSE)
-[![DOI](https://zenodo.org/badge/707286618.svg)](https://zenodo.org/doi/10.5281/zenodo.10023565)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10212010.svg)](https://doi.org/10.5281/zenodo.10212010)
 [![codecov](https://codecov.io/gh/SETeam59/application-tracking-system/branch/main/graph/badge.svg)](https://codecov.io/gh/SETeam59/application-tracking-system)
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 [![Issues](https://img.shields.io/github/issues/SETeam59/application-tracking-system)](https://GitHub.com/SETeam59/application-tracking-system/)
