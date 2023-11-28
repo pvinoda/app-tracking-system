@@ -25,7 +25,7 @@
 # Career Pulse Tracker - Your Job Tracking Assistant
 
 Advertisement - Redirects Page
-[![Watch the video](https://img.youtube.com/vi/VAieiJGv9_Q/maxresdefault.jpg)](https://youtu.be/VAieiJGv9_Q)
+[![Watch the video](https://img.youtube.com/vi/VAieiJGv9_Q/maxresdefault.jpg)](https://youtu.be/CaWHOl1CIbk)
 
 CareerPulse Tracker
 
