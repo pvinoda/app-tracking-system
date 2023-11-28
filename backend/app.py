@@ -17,6 +17,9 @@ from datetime import datetime, timedelta
 import yaml
 import hashlib
 import uuid
+import requests
+import fitz
+import json
 
 existing_endpoints = ["/applications", "/resume","/boards","/getBoards", "/jobDescription"]
 
@@ -445,7 +448,20 @@ def create_app():
             # job_description_dict = data
             print("PVB ENDPOINT")
             print(skills)
+            resp = requests.post('https://quickchart.io/wordcloud', json={
+                'format': 'png',
+                'width': 600,
+                'height': 600,
+                'fontScale': 15,
+                'scale': 'linear',
+                'removeStopwords': True,
+                'cleanWords':True,
+                'minWordLength': 3,
+                'text': skills,
+            })
 
+            with open('resume_word_cloud.png', 'wb') as f:
+                f.write(resp.content)
             user = Users.objects(id=userid).first()
             if user:
                 print("User Full Name is ",user.fullName)
