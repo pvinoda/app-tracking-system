@@ -18,7 +18,7 @@ import yaml
 import hashlib
 import uuid
 
-existing_endpoints = ["/applications", "/resume","/boards","/getBoards"]
+existing_endpoints = ["/applications", "/resume","/boards","/getBoards", "/jobDescription"]
 
 
 def create_app():
@@ -305,6 +305,7 @@ def create_app():
             print("Srj1",json_string)
             print("Srj2",type(board_data_dict["board"]))
             print("Srj3",userid)
+            # Fetching User Skills 
             try:
                 print("Srj4",board_data_dict["board"])
                 request_data = board_data_dict["board"]
@@ -315,10 +316,13 @@ def create_app():
 
             user = Users.objects(id=userid).first()
             if user:
+                user_skills = user.jobdescription
                 print("Srj5",user.fullName)
             user.update(board=board_data_dict["board"])
             user.save()
-            print("Errrrr")
+            
+            
+
             return jsonify(board_data_dict), 200
         except:
             return jsonify({"error": "Internal server error"}), 500
@@ -425,6 +429,43 @@ def create_app():
             print(e)
             return jsonify({"error": "Internal server error"}), 500
 
+    @app.route("/jobDescription", methods=["POST"], )
+    def add_skills():
+        """
+        Add/Update board for the user
+
+        :return: JSON object with status and message
+        """
+        try:
+            userid = get_userid_from_header()
+            skills = request.get_json()
+            # data_dict = data.to_dict()
+            # json_string = next(iter(data_dict.keys()))
+            # job_description_dict = json.loads(json_string)
+            # job_description_dict = data
+            print("PVB ENDPOINT")
+            print(skills)
+
+            user = Users.objects(id=userid).first()
+            if user:
+                print("User Full Name is ",user.fullName)
+                print(type(user))
+            else:
+                print("User does not exist for the given User ID")
+            user.update(jobdescription=skills)
+            user.save()
+
+            
+            print("User Skills are updated with Database Instance")
+
+            # return jsonify(board_data_dict), 200
+            return skills, 200
+            
+        except Exception as ex:
+            print(ex)
+            return jsonify({"error": "Internal server error"}), 500
+        return '1',200
+
     @app.route("/resume", methods=["GET"])
     def get_resume():
         """
@@ -484,6 +525,7 @@ class Users(db.Document):
     applications = db.ListField()
     resume = db.FileField()
     board=db.ListField()
+    jobdescription=db.StringField()
 
     def to_json(self):
         """
