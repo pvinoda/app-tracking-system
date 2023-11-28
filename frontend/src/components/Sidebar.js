@@ -6,11 +6,13 @@ import useDarkMode from "../hooks/useDarkMode";
 import darkIcon from "../assets/icon-dark-theme.svg";
 import lightIcon from "../assets/icon-light-theme.svg";
 
+import uploadIcon from "../assets/upload-file.svg";
 import showSidebarIcon from "../assets/icon-show-sidebar.svg";
 import hideSidebarIcon from "../assets/icon-hide-sidebar.svg";
 
 import boardsSlice from "../redux/boardsSlice";
 import AddEditBoardModal from "../modals/AddEditBoardModal";
+import $ from "jquery";
 
 function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
   const dispatch = useDispatch();
@@ -25,11 +27,97 @@ function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
     setDarkSide(checked);
   };
 
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [pdfContent, setPdfContent] = useState(null);
   const boards = useSelector((state) => state.boards);
 
   const toggleSidebar = () => {
     setIsSideBarOpen((curr) => !curr);
   };
+
+  const handleFileChange = (event) => {
+    // Update the selected file when the input value changes
+    setSelectedFile(event.target.value);
+    console.log("uploaded file is", selectedFile)
+  };
+
+  const handleUpload = async () => {
+    try {
+      console.log("Selected File", selectedFile)
+      if (!selectedFile) {
+        console.error("No file selected");
+        return;
+      }
+
+      // Create a FormData object
+      const formData = new FormData();
+      formData.append("file", selectedFile);
+
+      // parse the PDF file
+      // const reader = new FileReader();
+
+      // reader.onload = (e) => {
+      //   // e.target.result contains the contents of the file
+      //   const fileContents = e.target.result;
+      //   console.log('File Contents:', fileContents);
+      //   setPdfContent(fileContents)
+      // };
+
+      // reader.readAsText(selectedFile);
+
+      const pdfPayload = JSON.stringify(selectedFile);
+      console.log("Stringified JSON Description", pdfPayload)
+      // assuming pdfPayload is the string body of resume, making an API call
+
+      // $.ajax({
+      //   url: 'http://localhost:5000/resume',
+      //   method: 'POST',
+      //   data: pdfPayload,
+      //   headers: {
+      //     Authorization: "Bearer " + localStorage.getItem("token"),
+      //     "Access-Control-Allow-Origin": "http://localhost:3000",
+      //     "Access-Control-Allow-Credentials": "true",
+      //   },
+      //   credentials: "include",
+      //   contentType: "application/json"
+      // })
+    //   const wordCloudJSON = {
+    //     'format': 'png',
+    //     'width': 600,
+    //     'height': 600,
+    //     'fontScale': 15,
+    //     'scale': 'linear',
+    //     'removeStopwords': true,
+    //     'cleanWords':true,
+    //     'minWordLength': 3,
+    //     'text': pdfPayload,
+    // }
+      $.ajax({
+        url: 'http://localhost:5000/jobDescription',
+        method: 'POST',
+        data: pdfPayload,
+        headers: { 
+          Authorization: "Bearer " + localStorage.getItem("token"),
+          "Access-Control-Allow-Origin": "http://localhost:3000",
+          "Access-Control-Allow-Credentials": "true",
+        },
+        credentials: "include",
+        contentType: "application/json"
+      })
+      .then(data => {
+        console.log('Skill Details file uploaded successfully:', data);
+        // Handle success, e.g., show a success message to the user
+      })
+      .catch(error => {
+        console.error('Error uploading file:', error);
+        // Handle error, e.g., show an error message to the user
+      });
+
+    } catch (error) {
+      console.error("Error during file upload", error);
+    }
+  };
+
 
   return (
     <div>
@@ -76,9 +164,30 @@ function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
                     <img src={boardIcon} className="   filter-white  h-4 " />
                     <p className=" text-lg font-bold  ">Create New Board </p>
                   </div>
+                    <div>
+                    <form>
+                      <textarea
+                        name="resumeString"
+                        value={selectedFile}
+                        onChange={handleFileChange}
+                      />
+                    </form>
+                    </div>
+
+
+                  <div
+                    className=" flex  items-baseline space-x-2  mr-8 rounded-r-full duration-500 ease-in-out cursor-pointer text-[#635fc7] px-5 py-4 hover:bg-[#635fc71a] hover:text-[#635fc7] dark:hover:bg-white  "
+                    onClick={() => {
+                      handleUpload(true);
+                    }}
+                  >
+                    <img src={uploadIcon} className="h-4 " />
+                    <p className=" text-lg font-bold  ">Upload Skills</p>
+                  </div>
                 </div>
 
                 <div className=" mx-2  p-4 relative space-x-2 bg-slate-100 dark:bg-[#20212c] flex justify-center items-center rounded-lg">
+
                   <img src={lightIcon} alt="sun indicating light mode" />
 
                   <Switch

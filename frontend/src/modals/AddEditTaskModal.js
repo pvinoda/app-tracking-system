@@ -17,9 +17,12 @@ function AddEditTaskModal({
   const [isValid, setIsValid] = useState(true);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [profileMatch, setProfileMatch] = useState("");
   const board = useSelector((state) => state.boards).find(
     (board) => board.isActive
   );
+  
+  
 
   const columns = board.columns;
   const col = columns.find((col, index) => index === prevColIndex);
@@ -67,6 +70,7 @@ function AddEditTaskModal({
     );
     setTitle(task.title);
     setDescription(task.description);
+    setProfileMatch(task.profileMatch);
     setIsFirstLoad(false);
   }
 
@@ -80,6 +84,7 @@ function AddEditTaskModal({
         boardsSlice.actions.addTask({
           title,
           description,
+          profileMatch,
           subtasks,
           status,
           newColIndex,
@@ -90,6 +95,7 @@ function AddEditTaskModal({
         boardsSlice.actions.editTask({
           title,
           description,
+          profileMatch,
           subtasks,
           status,
           taskIndex,
@@ -143,7 +149,7 @@ function AddEditTaskModal({
         {/* Description */}
         <div className="mt-8 flex flex-col space-y-1">
           <label className="  text-sm dark:text-white text-gray-500">
-            Description
+            Job Description
           </label>
           <textarea
             value={description}
