@@ -10,7 +10,7 @@
 | Workload is spread over the whole team (one team member is often X times more productive than the others...) | 3 | Responsibility was spread evenly between the group members in terms of functionality but nevertheless, here is a track record that everyone is contributing a lot |
 | Number of commits | 3 | Overall, there were a significant number of quality commits - https://github.com/pvinoda/app-tracking-system/graphs/commit-activity |
 | Number of commits: by different people | 3 |  |
-| Issues reports: there are many | 3 | All code changes had relevant issues they were linked to:  |
+| Issues reports: there are many | 3 | All code changes had relevant issues they were linked to: [Issues](https://github.com/pvinoda/app-tracking-system/issues) |
 | Issues are being closed | 3 | Issues are closed after code-related branches were closed |
 | DOI badge: exists | 3 | in README |
 | Docs: doco generated, format not ugly | 3 | README, show the rest of things |
