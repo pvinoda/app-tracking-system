@@ -2,22 +2,28 @@ import { createSlice } from "@reduxjs/toolkit";
 import $ from "jquery";
 
 const createNewBoard = (board) => {
-  $.ajax({
-    url: "http://localhost:5000/boards",
-    method: "POST",
-    headers: {
-      Authorization: "Bearer " + localStorage.getItem("token"),
-      "Access-Control-Allow-Origin": "http://localhost:3000",
-      "Access-Control-Allow-Credentials": "true",
-    },
-    credentials: "include",
-    data: JSON.stringify({
-      board: board,
-    }),
-    success: (board) => {
-      console.log("board created", board);
-    },
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      url: "http://localhost:5000/boards",
+      method: "POST",
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+        "Access-Control-Allow-Origin": "http://localhost:3000",
+        "Access-Control-Allow-Credentials": "true",
+      },
+      credentials: "include",
+      data: JSON.stringify({
+        board: board,
+      }),
+      success: (data) => {
+        resolve(data);
+      },
+      error: (error) => {
+        reject(error);
+      }
+    });
   });
+  
 };
 
 const boardsSlice = createSlice({
@@ -42,6 +48,9 @@ const boardsSlice = createSlice({
       state.push(board);
       createNewBoard(state);
     },
+    updateBoardBackendData: (state, action) => {
+      state.push(action.payload);
+    },
     editBoard: (state, action) => {
       const payload = action.payload;
       const board = state.find((board) => board.isActive);
@@ -63,19 +72,29 @@ const boardsSlice = createSlice({
       });
     },
     addTask: (state, action) => {
-      const { title, status, description, subtasks, newColIndex } =
+      const { title, status, description, profileMatch, subtasks, newColIndex } =
         action.payload;
-      const task = { title, description, subtasks, status };
+      const task = { title, description, profileMatch, subtasks, status };
       const board = state.find((board) => board.isActive);
       const column = board.columns.find((col, index) => index === newColIndex);
       column.tasks.push(task);
-      createNewBoard(state);
+      createNewBoard(state)
+      .then((data) => {
+        console.log("Board dara outside callback", data)
+        state= data
+        console.log("state dara outside callback", state)
+      })
+      .catch((error) => {
+        console.log("Error Fetching Board");
+      });
+      
     },
     editTask: (state, action) => {
       const {
         title,
         status,
         description,
+        profileMatch,
         subtasks,
         prevColIndex,
         newColIndex,
@@ -87,6 +106,7 @@ const boardsSlice = createSlice({
       task.title = title;
       task.status = status;
       task.description = description;
+      task.profileMatch = profileMatch;
       task.subtasks = subtasks;
       if (prevColIndex === newColIndex) return;
       column.tasks = column.tasks.filter((task, index) => index !== taskIndex);

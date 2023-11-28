@@ -10,6 +10,15 @@ function Task({ colIndex, taskIndex }) {
   const task = col?.tasks.find((t, i) => i === taskIndex);
   const [isTaskModalOpen, setIsTaskModalOpen] = useState(false);
 
+  let profileColor = 'black'
+  if(task.profileMatch>85){
+    profileColor = 'green';
+  } else if(task.profileMatch>70 && task.profileMatch<=85){
+    profileColor = 'orange';
+  } else {
+    profileColor = 'red;'
+  }
+
   let completed = 0;
   let subtasks = task.subtasks;
   subtasks.forEach((subtask) => {
@@ -38,6 +47,10 @@ function Task({ colIndex, taskIndex }) {
         <p className="font-bold tracking-wide">{task.title}</p>
         <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
           {completed} of {subtasks.length} completed updates
+        </p>
+
+        <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500" style={{color:profileColor}}>
+          Profile Match {task.profileMatch} %
         </p>
       </div>
       {isTaskModalOpen && (

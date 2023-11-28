@@ -11,7 +11,8 @@ function AddEditBoardModal({ setIsBoardModalOpen, type }) {
   const [newColumns, setNewColumns] = useState([
     { name: "Applied", tasks: [], id: uuidv4() },
     { name: "Rejected", tasks: [], id: uuidv4() },
-    { name: "Waiting For Referral", tasks: [], id: uuidv4() },
+    { name: "Referred", tasks: [], id: uuidv4() },
+    { name: "Interviewed", tasks: [], id: uuidv4() }
   ]);
   const [isValid, setIsValid] = useState(true);
   const board = useSelector((state) => state.boards).find(
