@@ -105,121 +105,11 @@ We have implemented the night mode feature as well which diversifies the applica
 <p align="center"><img width="700" src="resources\night_mode.jpg"></p>
 <p align="center"><img width="700" src="resources\night_mode_edit_board.jpg"></p>
 
-### What's New
+## Documentation
 
-#### Version 1.1
-
-- Add headless feature for Selenium
-- Fix shutdown.sh
-- Login frontend
-- Add resume storage for users
-- Updated reloading issues
-- Fix linting issues
-
-#### Version 1.3
-
-- Updated badges for the repository
-- Users' database implementation
-- Add logout endpoint and update middleware
-- Login frontend for login and signup functionality
-- Added Dark Mode to improve user experience
+We have our detailed documentation in our wiki page [wiki link](https://github.com/pvinoda/app-tracking-system/wiki)
 
 
-## Future Scope
-
-- Include deadline reminders for the application and interview.
-- Add a feature that allows users to attach these reminders to their Google calendar.
-- Incorporate notifications for upcoming deadlines.
-- Add a storage option for resumes and cover letters so they can be saved for future use.
-- Include a direct link to the company's application site when the wishlist item is clicked.
-- Include a link to the university’s career fair page.
-- Direct connection to Linkedin, allowing for the addition of job opportunities to the wishlist.
-
-## Explanation
-
-Currently, we have five fundamental features in our project:
-
-1. **Job Application Tracking:** Keep an organized record of job applications, including a wish list, application history, and the ability to add prospective offers.
-
-2. **Project Management Integration:** Extend the application's functionality beyond job applications to create dynamic boards and columns for project management.
-
-3. **Customization:** Customize columns, titles, descriptions, and workflow stages to match your unique needs.
-
-4. **Efficient Updates:** Easily track progress with detailed updates, stage assignments, and a drag-and-drop feature for seamless task management.
-
-5. **Data Security:** Ensure your information is stored securely with data persistence in a database, accessible for the long term.
-
-## Technologies Used
-
-- Python
-- Node.Js
-- Flask
-- MongoDB
-- React
-
-## Installation
-
-### Requirements:
-
-- [Python](https://www.python.org/downloads/) (recommended >= 3.8)
-- [pip](https://pip.pypa.io/en/stable/installation/) (Latest version 21.3 used as of 11/3)
-- [npm](https://nodejs.org/en/) (Latest version 6.14.4 used as of 11/3)
-
-### Strongly Recommended:
-
-- A terminal environment capable of handling bash scripts.
-
-To install all required packages, while within the context of the project root directory, run:
-
-```
-./setup.sh
-```
-This will handle all npm and pip package installations required for both the front and backend.
-
-*If the script says "command not found" or something similar, run chmod +x ./setup.sh. This grants the script execution privileges. Depending on your setup, this may occur for the boot_dockerless files, amongst others. The same command will fix the issue.*
-
-## Getting Started:
-### Boot:
-To run a testing environment, run:
-```
-./startup.sh
-```
-This will run flask and npm simultaneously, booting both the front and backend. Note - npm takes substantially longer to boot compared to flask.
-### Shutdown:
-To ensure that flask is no longer occupying a port, run:
-```
-./shutdown.sh
-```
-This will search for any active process containing "flask" and kill the process.
-
-## Hosting the Database:
-### Local MongoDB:
-1. Download [MongoDB Community Server](https://docs.mongodb.com/manual/administration/install-community/)
-2. Follow the [Installion Guide](https://docs.mongodb.com/guides/server/install/)
-3. In  ```app.py```  set  ```'host'```  string to  ```'localhost'```
-4. Run the local database: 
-``` 
-mongod 
-```
-* Recommended: Use a GUI such as [Studio 3T](https://studio3t.com/download/) to more easily interact with the database
-
-
-### Hosted database with MongoDB Atlas:
-1. [Create account](https://account.mongodb.com/account/register) for MongoDB
- 
-** ___If current MongoDB Atlas owner adds your username/password to the cluster, skip to step 4___ **
-
-2. Follow MongoDB Atlas [Setup Guide](https://docs.atlas.mongodb.com/getting-started/) to create a database collection for hosting applications
-3. In  ```app.py```  set  ```'host'```  string to your MongoDB Atlas connection string
-4. Create an  ```application.yml```  file in the /backend directory with the specifications:
-```
-username: <MongoDB Atlas cluster username>
-password: <MongoDB Atlas cluster password>
-```
-5. For testing through CI to function as expected, repository secrets will need to be added through the settings. Create individual secrets with the following keys/values:
-```
-MONGO_USER: <MongoDB Atlas cluster username>
-MONGO_PASS: <MongoDB Atlas cluster password>
 ```
 ## License
 The project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license. 
@@ -230,7 +120,7 @@ Please see our CONTRIBUTING.md for instructions on how to contribute to the repo
 
 
 ## Team Members
-- Sharan Jamanani
-- Nayan Bhushan K N
-- Saketh Ruddarraju
-- Hruthwik Krishnamurthy
+- Harikrishnan Venkatesh
+- Kruthik Jonnagaddala Thyagaraja
+- Prabhanjan Vinoda Bharadwaj
+- Sai Kishore Honnavalli Ravi Shankar
