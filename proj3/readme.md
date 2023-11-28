@@ -1,5 +1,5 @@
 ### link to video
-[https://youtu.be/S7NABt8ZBcQ?si=hseAnhM3ENS1fgn1](https://youtu.be/S7NABt8ZBcQ?si=hseAnhM3ENS1fgn1)
+[Youtube Link](https://youtu.be/S7NABt8ZBcQ?si=hseAnhM3ENS1fgn1)
 
 
 ### Scorecard
@@ -8,9 +8,9 @@
 | --- | --- | --- |
 | Video | 3 | README has a video of all functionality |
 | Workload is spread over the whole team (one team member is often X times more productive than the others...) | 3 | Responsibility was spread evenly between the group members in terms of functionality but nevertheless, here is a track record that everyone is contributing a lot |
-| Number of commits | 3 | Overall, there were a significant number of quality commits - [GitHub Commits](https://github.com/SETeam59/application-tracking-system/commits/main) |
-| Number of commits: by different people | 3 | Note that Saketh commited code under a different account "svruddar" https://github.com/SETeam59/application-tracking-system/graphs/contributors |
-| Issues reports: there are many | 3 | All code changes had relevant issues they were linked to: [GitHub Issues](https://github.com/SETeam59/application-tracking-system/issues?q=is:open+is:issue) |
+| Number of commits | 3 | Overall, there were a significant number of quality commits - https://github.com/pvinoda/app-tracking-system/graphs/commit-activity |
+| Number of commits: by different people | 3 |  |
+| Issues reports: there are many | 3 | All code changes had relevant issues they were linked to:  |
 | Issues are being closed | 3 | Issues are closed after code-related branches were closed |
 | DOI badge: exists | 3 | in README |
 | Docs: doco generated, format not ugly | 3 | README, show the rest of things |
@@ -26,9 +26,9 @@
 | Other automated analysis tools | 3 | Pylint, CodeCoverage, GitHub Actions, Pytest |
 | Test cases exist | Y |
 | Test cases are routinely executed | 3 | Tests are executed on every commit, GitHub Actions |
-| The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up | 3 | [Contributing.md](https://github.com/Sharansrj567/application-tracking-system/blob/ui-v2/Contributing.md) |
+| The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up | 3 | [Contributing.md](https://github.com/pvinoda/app-tracking-system/blob/main/Contributing.md) |
 | Issues are discussed before they are closed | 2 | Issues have relevant comments |
-| Chat channel: exists | 3 | Show WhatsApp Group |
+| Chat channel: exists | 3 |  WhatsApp Group evidence shown |
 | Test cases: a large proportion of the issues related to handling failing cases |  |
 | Evidence that the whole team is using the same tools: everyone can get to all tools and files | 3 | All development tools used are free, and the dependency list is available to everyone on GH |
 | Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people) | 3 | Installation steps and requirements.txt file ensure that everyone is using the same tools for development |
@@ -36,7 +36,7 @@
 | Evidence that the members of the team are working across multiple places in the code base | 3 | All group members worked on multiple features of the application |
 | Short release cycles | 3 |  |
 | Online sustainability evaluation |  |
-| Does your website and documentation provide a clear, high-level overview of your software? | Y | README |
+| Does your website and documentation provide a clear, high-level overview of your software? | Y | README - Wiki Page has different pages for different aspects of Docs |
 | Does your website and documentation clearly describe the type of user who should use your software? | Y | People who want to manage their job applications easily |
 | Do you publish case studies to show how your software has been used by yourself and others? | Y | Screenshots and steps on the README |
 | Is the name of your project/software unique? | Y |  |
