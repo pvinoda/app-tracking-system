@@ -207,11 +207,9 @@ def create_app():
 
 
 
-    def call_sentence_similarity(sentence_input: str):
-        sentence_a = "Development experience on projects related to model optimization such as quantization, pruning and " \
-                "distillation Domain knowledge of graph neural network, generative AI and large language model " \
-                "Frameworks like Pytorch TensorFlow and Keras for model development Using AWS Azure GCP for machine " \
-                "learning training, inference or other use cases Knowledge of C/ C++. "
+    def call_sentence_similarity(sentence_input: str, userid):
+        user = Users.objects(id=userid).first()
+        sentence_a =  user.resume
         
         # using sentence_input for intelligent sentence similiarity comparisons
 
@@ -340,7 +338,7 @@ def create_app():
                 print("Srj5",user.fullName)
 
 
-            similarity_score = call_sentence_similarity(user.jobsecription)
+            similarity_score = call_sentence_similarity(user.jobsecription, userid)
 
             user.profileMatch = similarity_score
 
@@ -433,7 +431,10 @@ def create_app():
         """
         try:
             userid = get_userid_from_header()
+            user = Users.objects(id=userid).first()
             print("request s", request.data)
+            user.resume = request.data
+            user.save()
             return (request.get_json()), 200
 
             try:
