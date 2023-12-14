@@ -20,8 +20,10 @@ import uuid
 import requests
 import fitz
 import json
+from sentence_similarity import sentence_similarity
 
 existing_endpoints = ["/applications", "/resume","/boards","/getBoards", "/jobDescription"]
+
 
 
 def create_app():
@@ -203,6 +205,21 @@ def create_app():
         except:
             return jsonify({"error": "Internal server error"}), 500
 
+
+
+    def call_sentence_similarity(sentence_input: str):
+        sentence_a = "Development experience on projects related to model optimization such as quantization, pruning and " \
+                "distillation Domain knowledge of graph neural network, generative AI and large language model " \
+                "Frameworks like Pytorch TensorFlow and Keras for model development Using AWS Azure GCP for machine " \
+                "learning training, inference or other use cases Knowledge of C/ C++. "
+        
+        # using sentence_input for intelligent sentence similiarity comparisons
+
+        model = sentence_similarity(model_name='distilbert-base-uncased', embedding_type='sentence_embedding')
+        score = model.get_score(sentence_a, sentence_input, metric="cosine")
+        print(score)
+        return score
+
     @app.route("/users/logout", methods=["POST"])
     def logout():
         """
@@ -321,10 +338,16 @@ def create_app():
             if user:
                 user_skills = user.jobdescription
                 print("Srj5",user.fullName)
+
+
+            similarity_score = call_sentence_similarity(user.jobsecription)
+
+            user.profileMatch = similarity_score
+
             user.update(board=board_data_dict["board"])
             user.save()
-            
-            
+
+            # calling the sentence similarity methods
 
             return jsonify(board_data_dict), 200
         except:
@@ -412,6 +435,7 @@ def create_app():
             userid = get_userid_from_header()
             print("request s", request.data)
             return (request.get_json()), 200
+
             try:
                 file = request.files["file"].read()
             except:
@@ -586,6 +610,7 @@ def get_new_application_id(user_id):
         new_id = max(new_id, a["id"])
 
     return new_id + 1
+
 
 
 if __name__ == "__main__":
